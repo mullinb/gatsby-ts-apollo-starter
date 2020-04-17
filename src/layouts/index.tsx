@@ -1,8 +1,8 @@
-import * as React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
-import './index.css'
+import './index.css';
 
 const Header = () => (
   <div
@@ -31,13 +31,13 @@ const Header = () => (
       </h1>
     </div>
   </div>
-)
+);
 
 interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
   location: {
-    pathname: string
-  }
-  children: any
+    pathname: string;
+  };
+  children: any;
 }
 
 class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
@@ -63,8 +63,8 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
           {this.props.children()}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default DefaultLayout
+export default DefaultLayout;
